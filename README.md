@@ -1,6 +1,6 @@
 # Moneybox
 
-This demo app is an iOS application performing login a user and retrieve all his investor products using Moneybox API. User session is saved securely inside the Apple Keychain but the products are fetched at each session.
+This demo app is an iOS allows a user login and retrieves all his investor products using Moneybox API. User session is saved securely inside the Apple Keychain while the products are fetched at each session.
 
 This project is oriented toward the following patterns: 
 
