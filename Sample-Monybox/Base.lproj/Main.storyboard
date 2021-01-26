@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Sample_Moneybox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dW9-Qw-GAH">
+                                <rect key="frame" x="162" y="158" width="90" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSA-2I-fjt">
+                                <rect key="frame" x="184.5" y="232" width="45" height="30"/>
+                                <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <action selector="onLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xdb-ZR-NrB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ruz-9T-1nu">
+                                <rect key="frame" x="176" y="84" width="62.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cSA-2I-fjt" firstAttribute="top" secondItem="dW9-Qw-GAH" secondAttribute="bottom" constant="40" id="8rZ-VQ-O9g"/>
+                            <constraint firstItem="Ruz-9T-1nu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YGi-f3-UeU"/>
+                            <constraint firstItem="cSA-2I-fjt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="caZ-Vk-OH7"/>
+                            <constraint firstItem="Ruz-9T-1nu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="enq-ym-9gz"/>
+                            <constraint firstItem="dW9-Qw-GAH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jDb-Pu-k5B"/>
+                            <constraint firstItem="dW9-Qw-GAH" firstAttribute="top" secondItem="Ruz-9T-1nu" secondAttribute="bottom" constant="40" id="yjy-O9-iR0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="Ruz-9T-1nu" id="LdN-kn-BBM"/>
+                        <outlet property="passwordTxtField" destination="dW9-Qw-GAH" id="t0a-pQ-VmW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="131"/>
+        </scene>
+        <!--Products View Controller-->
+        <scene sceneID="yyN-7W-vJU">
+            <objects>
+                <viewController storyboardIdentifier="productsViewController" id="aFn-zT-Lrf" customClass="ProductsViewController" customModule="Sample_Moneybox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AF9-Vp-Ylk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="viD-bo-0zC">
+                                <rect key="frame" x="0.0" y="244" width="414" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="102" id="IR5-UG-lmj" customClass="ProductCell" customModule="Sample_Moneybox" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="102"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IR5-UG-lmj" id="tqx-wd-WpY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ind-7L-8Fc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCS-RV-dhs">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVd-Li-n2l">
+                                                            <rect key="frame" x="0.0" y="37.5" width="414" height="27"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moneybox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMI-oM-qqH">
+                                                            <rect key="frame" x="0.0" y="74.5" width="414" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ind-7L-8Fc" firstAttribute="top" secondItem="tqx-wd-WpY" secondAttribute="top" id="80B-WF-qFQ"/>
+                                                <constraint firstItem="ind-7L-8Fc" firstAttribute="leading" secondItem="tqx-wd-WpY" secondAttribute="leading" id="b5i-JM-3X4"/>
+                                                <constraint firstAttribute="bottom" secondItem="ind-7L-8Fc" secondAttribute="bottom" id="c9j-eM-gIC"/>
+                                                <constraint firstAttribute="trailing" secondItem="ind-7L-8Fc" secondAttribute="trailing" id="x8x-vK-zru"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="moneyboxLabel" destination="eMI-oM-qqH" id="bMo-2y-gso"/>
+                                            <outlet property="planValueLabel" destination="ZVd-Li-n2l" id="3eQ-Sd-66g"/>
+                                            <outlet property="stockNameLabel" destination="fCS-RV-dhs" id="o2e-5t-ih8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aFn-zT-Lrf" id="sWm-7r-4hL"/>
+                                    <outlet property="delegate" destination="aFn-zT-Lrf" id="g2f-MZ-3Jj"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7to-tU-KQr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KT-ew-GJ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="onLogout:" destination="aFn-zT-Lrf" eventType="touchUpInside" id="QXL-1t-J65"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUP-cS-3zz">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yki-fa-Rz3">
+                                        <rect key="frame" x="0.0" y="100" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Plan Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0Z-nQ-PoI">
+                                        <rect key="frame" x="0.0" y="150" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tjx-dp-EID"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tjx-dp-EID" firstAttribute="bottom" secondItem="viD-bo-0zC" secondAttribute="bottom" id="2lI-7c-tJm"/>
+                            <constraint firstItem="viD-bo-0zC" firstAttribute="leading" secondItem="tjx-dp-EID" secondAttribute="leading" id="8z5-ei-VKh"/>
+                            <constraint firstItem="tjx-dp-EID" firstAttribute="trailing" secondItem="7to-tU-KQr" secondAttribute="trailing" id="EJg-QB-ARg"/>
+                            <constraint firstItem="7to-tU-KQr" firstAttribute="top" secondItem="tjx-dp-EID" secondAttribute="top" id="oGx-oH-hy5"/>
+                            <constraint firstItem="7to-tU-KQr" firstAttribute="leading" secondItem="tjx-dp-EID" secondAttribute="leading" id="wON-k7-092"/>
+                            <constraint firstItem="tjx-dp-EID" firstAttribute="trailing" secondItem="viD-bo-0zC" secondAttribute="trailing" id="wjR-TR-pGL"/>
+                            <constraint firstItem="viD-bo-0zC" firstAttribute="top" secondItem="7to-tU-KQr" secondAttribute="bottom" constant="20" id="zk5-4W-P48"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoutBtn" destination="7KT-ew-GJ8" id="hwe-bu-Ac8"/>
+                        <outlet property="planValueLabel" destination="d0Z-nQ-PoI" id="Iw6-pZ-yLt"/>
+                        <outlet property="tableView" destination="viD-bo-0zC" id="bzu-un-E4m"/>
+                        <outlet property="userNameLabel" destination="Yki-fa-Rz3" id="9cr-Uo-9ow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCk-OR-t4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="-553.125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

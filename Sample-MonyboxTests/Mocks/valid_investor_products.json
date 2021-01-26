@@ -1,0 +1,159 @@
+{
+    "MoneyboxEndOfTaxYear": "2021-03-31T00:00:00.000",
+    "TotalPlanValue": 5651.960000,
+    "TotalEarnings": -4.520000,
+    "TotalContributionsNet": 5104.73,
+    "TotalEarningsAsPercentage": -0.09,
+    "ProductResponses": [
+        {
+            "Id": 8043,
+            "PlanValue": 2693.80,
+            "Moneybox": 0.00,
+            "SubscriptionAmount": 0.00,
+            "TotalFees": 1.74,
+            "IsSelected": false,
+            "IsFavourite": false,
+            "CollectionDayMessage": "No money was collected today",
+            "WrapperId": "b9eaa523-cdd5-46c6-8353-9d538da845e0",
+            "IsCashBox": false,
+            "AssetBox": {
+                "Title": "Investments"
+            },
+            "Product": {
+                "Id": 1,
+                "Name": "ISA",
+                "CategoryType": "Investment",
+                "Type": "Isa",
+                "FriendlyName": "Stocks & Shares ISA",
+                "CanWithdraw": true,
+                "ProductHexCode": "#c5d561",
+                "AnnualLimit": 20000.00,
+                "DepositLimit": 0.00,
+                "BonusMultiplier": 0.00,
+                "MinimumWeeklyDeposit": 2.0,
+                "MaximumWeeklyDeposit": 400.0,
+                "Documents": {
+                    "KeyFeaturesUrl": "https://api-test02.moneyboxapp.com/docs/KeyFeaturesDocumentAll"
+                },
+                "State": "None"
+            },
+            "InvestorAccount": {
+                "ContributionsNet": 2702.00,
+                "EarningsNet": -8.20,
+                "EarningsAsPercentage": -0.30
+            },
+            "Personalisation": {
+                "QuickAddDeposit": {
+                    "Amount": 10.00
+                },
+                "HideAccounts": {
+                    "Enabled": false,
+                    "IsHidden": false,
+                    "Sequence": 1
+                }
+            },
+            "Contributions": {
+                "Status": "Enabled"
+            },
+            "MoneyboxCircle": {
+                "State": "None"
+            },
+            "State": "None"
+        },
+        {
+            "Id": 8042,
+            "PlanValue": 2958.160000,
+            "Moneybox": 20.00,
+            "SubscriptionAmount": 20.00,
+            "TotalFees": 0.00,
+            "IsSelected": true,
+            "IsFavourite": true,
+            "CollectionDayMessage": "No money was collected today",
+            "WrapperId": "e7bdfeb4-23c7-44d6-88f5-04dc0c7ab99d",
+            "IsCashBox": false,
+            "AssetBox": {
+                "Title": "Cash"
+            },
+            "Product": {
+                "Lisa": {
+                    "MaximumBonus": 1000.0000
+                },
+                "Id": 7,
+                "Name": "Lisa Plus",
+                "CategoryType": "Cash",
+                "Type": "Lisa",
+                "FriendlyName": "Lifetime ISA",
+                "CanWithdraw": false,
+                "ProductHexCode": "#49bfbd",
+                "AnnualLimit": 4000.00,
+                "DepositLimit": 0.00,
+                "BonusMultiplier": 0.25,
+                "MinimumWeeklyDeposit": 2.0,
+                "MaximumWeeklyDeposit": 400.0,
+                "InterestRate": "0.35% AER",
+                "InterestRateAmount": 0.003500,
+                "IntroductoryBonus": {
+                    "Rate": "+0.5%",
+                    "Amount": 0.005000,
+                    "Description": "The introductory bonus runs for one year from the day you sign up for your Moneybox Cash Lifetime ISA. It is calculated daily and will be paid into your account at the end of that year. For more information, visit the Help section or contact us via the in-app chat."
+                },
+                "LogoUrl": "https://assets.moneyboxapp.com/images/app-assets/InvestecIconRebrand.png",
+                "Documents": {
+                    "KeyFeaturesUrl": "https://api-test02.moneyboxapp.com/docs/KeyFeaturesDocumentLISACashInvestec2"
+                },
+                "State": "None",
+                "Fund": {
+                    "FundId": 37,
+                    "Name": "Investec",
+                    "LogoUrl": "https://assets.moneyboxapp.com/images/app-assets/InvestecIconRebrand.png",
+                    "IsFundDMB": false
+                }
+            },
+            "InvestorAccount": {
+                "TodaysInterest": 0.0688,
+                "ContributionsNet": 2402.73,
+                "EarningsNet": 3.680000,
+                "EarningsAsPercentage": 23.03
+            },
+            "Personalisation": {
+                "QuickAddDeposit": {
+                    "Amount": 10.00
+                },
+                "HideAccounts": {
+                    "Enabled": false,
+                    "IsHidden": false,
+                    "Sequence": 2
+                }
+            },
+            "Contributions": {
+                "Status": "Enabled"
+            },
+            "MoneyboxCircle": {
+                "State": "None"
+            },
+            "State": "None"
+        }
+    ],
+    "Accounts": [
+        {
+            "Type": "Isa",
+            "Name": "Stocks & Shares ISA",
+            "Wrapper": {
+                "Id": "b9eaa523-cdd5-46c6-8353-9d538da845e0",
+                "TotalValue": 2693.80,
+                "EarningsNet": -8.20,
+                "EarningsAsPercentage": -0.30
+            }
+        },
+        {
+            "Type": "Lisa",
+            "Name": "Lifetime ISA",
+            "Wrapper": {
+                "Id": "e7bdfeb4-23c7-44d6-88f5-04dc0c7ab99d",
+                "TotalValue": 2956.13,
+                "EarningsNet": 3.680000,
+                "EarningsAsPercentage": 23.03
+            }
+        }
+    ]
+}

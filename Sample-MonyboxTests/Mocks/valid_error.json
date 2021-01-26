@@ -1,0 +1,5 @@
+{
+    "Name": "Bearer token expired",
+    "Message": "Your session has expired. Please close the app and log in again.",
+    "ValidationErrors": []
+}

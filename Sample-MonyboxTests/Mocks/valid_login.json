@@ -1,0 +1,71 @@
+{
+    "User": {
+        "UserId": "c634381a-7f93-43ff-a21d-cb4506ee5c17",
+        "HasVerifiedEmail": true,
+        "IsPinSet": true,
+        "AmlStatus": "Clear",
+        "AmlAttempts": 1,
+        "RoundUpMode": "Off",
+        "JisaRoundUpMode": "Off",
+        "InvestorProduct": "",
+        "RegistrationStatus": "IsComplete",
+        "JisaRegistrationStatus": "None",
+        "DirectDebitMandateStatus": "Active",
+        "DateCreated": "2020-07-17T14:00:24.990",
+        "Animal": "",
+        "ReferralCode": "G5RHDT",
+        "IntercomHmac": "356e5667ae5fd603eb19fa23d3d4cbfa8dd5edba5f5e796c857da07085a954e9",
+        "IntercomHmaciOS": "356e5667ae5fd603eb19fa23d3d4cbfa8dd5edba5f5e796c857da07085a954e9",
+        "IntercomHmacAndroid": "3b9c4c3f62adde7e7dd5a0e979bf976d5d603be2630e385058c1f8ff0d712af7",
+        "HasCompletedTutorial": false,
+        "LastPayment": 0.0,
+        "PreviousMoneyboxAmount": 0.00,
+        "MoneyboxRegistrationStatus": "IsComplete",
+        "Email": "test+ios@moneyboxapp.com",
+        "FirstName": "Michael",
+        "LastName": "Jordan",
+        "MobileNumber": "07566543455",
+        "RoundUpWholePounds": true,
+        "DoubleRoundUps": false,
+        "MoneyboxAmount": 0.00,
+        "InvestmentTotal": 0.0,
+        "CanReinstateMandate": false,
+        "DirectDebitHasBeenSubmitted": true,
+        "MonthlyBoostEnabled": false,
+        "MonthlyBoostAmount": 0.00,
+        "MonthlyBoostDay": 1,
+        "RestrictedDevice": false,
+        "Cohort": 76
+    },
+    "Session": {
+        "BearerToken": "wcjo+FG9KjQQjdLfN+yA/MxaCnnk5TgiWqHxjOrh37E=",
+        "ExternalSessionId": "29b91390-ee2a-49ec-bb3a-4733513a0f64",
+        "SessionExternalId": "29b91390-ee2a-49ec-bb3a-4733513a0f64",
+        "ExpiryInSeconds": 0
+    },
+    "ActionMessage": {
+        "Type": "Deposit",
+        "Message": "Little and often is the best way to save. \r\nAdd a little extra to your Moneybox.",
+        "Actions": [
+            {
+                "Label": "Add £2",
+                "Amount": 2.0,
+                "Type": "Deposit",
+                "Animation": "None"
+            },
+            {
+                "Label": "Add £5",
+                "Amount": 5.0,
+                "Type": "Deposit",
+                "Animation": "None"
+            },
+            {
+                "Label": "Add £10",
+                "Amount": 10.0,
+                "Type": "Deposit",
+                "Animation": "None"
+            }
+        ]
+    },
+    "InformationMessage": "1 day until collection"
+}
